@@ -64,3 +64,42 @@ function funcF(){
         console.log(palavra)
     }
 }
+
+//apresenta intrevalo
+function funcG(){
+    let num1 = parseInt(prompt("Escreva o 1º número"))
+    let num2 = parseInt(prompt("Escreva o segundo número"))
+
+    for (i = num1; i<num2; i++){
+        console.log(i)
+    }
+}
+
+//tabuada
+function funcH(){
+    let num = parseInt(prompt("Qual é o número que pretende?"))
+
+    for(let i=0; i<11; i++){
+        console.log(num*i)
+    }
+}
+
+//divisores de 3
+function funcI(){
+    let n1 = parseInt(prompt("Qual é o primeiro número?"))
+    let n2 = parseInt(prompt("Qual é o segundo número?"))
+    let soma = 0
+
+    for (let i=n1; i<=n2; i++){
+        if(i % 3 == 0){
+            soma = soma + i
+        }
+    }
+    console.log(`O resultado da soma dos multiplos de 3 é ${soma}`)
+}
+
+//primos
+function funcJ(){
+    let n = parseInt(prompt("Qual o número que pretende v erificar se é primo?"))
+    
+}
