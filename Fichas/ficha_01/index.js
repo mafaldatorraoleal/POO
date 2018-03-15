@@ -100,6 +100,76 @@ function funcI(){
 
 //primos
 function funcJ(){
-    let n = parseInt(prompt("Qual o número que pretende v erificar se é primo?"))
-    
+    let n = parseInt(prompt("Qual o número que pretende verificar se é primo?"))
+    let primo = true
+
+    for( let i = 2; i < n; i++)
+    {
+        if(n % i == 0){
+           primo = false
+        }
+    }
+    let result = primo ? "sim" : "não"
+    console.log(result)
+}
+
+//fatorial
+function funcK(){
+    let num = parseInt(prompt("Qual é o número que pretende?"))
+    let fatorial = 1; 
+    if(num == 0 || num == 1){
+        fatorial = 1
+    }
+    else if(num < 0){
+        console.log("Valor tem de ser maior ou igual a 0!")
+    }
+    else{
+        
+        for(let i = 1; i <= num; i++){
+             fatorial = fatorial * i
+        }
+    }
+    console.log(`O fatorial é ${fatorial}`)
+}
+
+//perfeitos
+function funcL(){
+    let num = parseInt(prompt("Qual é o número que pretende?"))
+    let divisores = 0
+    for( let i = num - 1; i > 0; i--){
+        if(num % i == 0){
+            divisores = divisores + i
+        }
+    }
+
+    if( divisores == num){
+        console.log(`SIM`)
+    }
+    else{
+        console.log(`NÃO`)
+    }
+}
+
+//ano bissexto
+function funcM(){
+    let year = parseInt(prompt("Qual é o ano?"))
+    let bissexto = false
+    if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+        bissexto = true
+    }
+    let result = bissexto ? "SIM" : "NÃO"
+    console.log(result)
+}
+
+//capicua
+function funcN(){
+    let num = parseInt(prompt("Qual é o numero?"))
+    let capicua = false
+
+    if (num.charAt(0) == num.charAt(2) ) {
+        console.log("SIM")
+    } else {
+        console.log("NÃO")
+    }        
 }
