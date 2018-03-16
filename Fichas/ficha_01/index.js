@@ -173,3 +173,32 @@ function funcN(){
         console.log("NÃO")
     }        
 }
+
+//jogo
+function funcO(){
+    let numero_random = Math.floor((Math.random()*99)+1)
+    let tentativas = 0
+
+    do{
+        let numero_utilizador = parseInt(prompt("Escreva um numero?"))
+
+        if(numero_utilizador > numero_random){
+            console.log(`PARA BAIXO`)
+        }
+        else if(numero_utilizador < numero_random){
+            console.log(`PARA CIMA`)
+        }
+        else{
+            break
+        }
+        tentativas++
+    }
+    while(tentativas < 5);
+
+    if( tentativas < 5){
+        console.log(`ADIVINHOU PARABÉNS!`)
+    }
+    else{
+        console.log(`PACIÊNCIA, JOGUE OUTRA VEZ!`)
+    }
+}
