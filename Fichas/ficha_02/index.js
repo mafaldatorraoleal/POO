@@ -27,3 +27,19 @@ function funcB(){
     }
     console.log(`O menor número do array é ${menor}`)
 }
+
+//Retirar N ao array
+function funcC(){
+    let tamanho = parseInt(prompt("Insira o número de elementos que pretende que o seu array tenha"))
+    let array = []
+
+    for(let i = 0; i < tamanho;i++){
+        array[i] = parseInt(prompt("Insira o " + (i+1) + "º elemento do array"))
+        let n = parseInt(prompt("Insira o número que pretende retirar do array"))
+
+        if(n = array[i]){
+            
+        }
+    }
+    
+}
